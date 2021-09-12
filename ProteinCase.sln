@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProteinCase", "ProteinCase\ProteinCase.csproj", "{B2B94E49-DDE3-4470-B8AE-9A5DD737438A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProteinCase.Tests", "ProteinCase.Tests\ProteinCase.Tests.csproj", "{D0D522B5-A781-45C4-A860-7E4BCFFBC911}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2B94E49-DDE3-4470-B8AE-9A5DD737438A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B94E49-DDE3-4470-B8AE-9A5DD737438A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B94E49-DDE3-4470-B8AE-9A5DD737438A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B94E49-DDE3-4470-B8AE-9A5DD737438A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D522B5-A781-45C4-A860-7E4BCFFBC911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D522B5-A781-45C4-A860-7E4BCFFBC911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D522B5-A781-45C4-A860-7E4BCFFBC911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D522B5-A781-45C4-A860-7E4BCFFBC911}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
