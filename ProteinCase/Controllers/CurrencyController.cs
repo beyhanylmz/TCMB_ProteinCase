@@ -28,5 +28,12 @@ namespace ProteinCase.Controllers
             var data = await _currencyService.GetHistoricalDataWithCurrentCode(code);
             return Ok(data);
         }
+        
+        [HttpGet("Test")]
+        public async Task<IActionResult> Test()
+        {
+            var data = await _currencyService.SaveDataFromWebService();
+            return Ok(data);
+        }
     }
 }

@@ -66,8 +66,7 @@ namespace ProteinCase.Infrastructure
             {
                 if (!string.IsNullOrEmpty(searchCode))
                 {
-                    currencies = currencies.Where(c =>
-                        string.Equals(c.CurrencyCode, searchCode, StringComparison.CurrentCultureIgnoreCase));
+                    currencies = currencies.Where(c => c.CurrencyCode.ToUpper() == searchCode.ToUpper());
                 }
 
                 switch (sort)
@@ -95,8 +94,7 @@ namespace ProteinCase.Infrastructure
 
         public async Task<IEnumerable<Currency>> GetHistoricalDataWithCurrentCode(string code)
         {
-            return await _currencyRepository.GetQueryable(x =>
-                    string.Equals(x.CurrencyCode, code, StringComparison.CurrentCultureIgnoreCase))
+            return await _currencyRepository.GetQueryable(x => x.CurrencyCode.ToUpper() == code.ToUpper())
                 .OrderBy(x => x.CreatedDate)
                 .ToListAsync();
         }
